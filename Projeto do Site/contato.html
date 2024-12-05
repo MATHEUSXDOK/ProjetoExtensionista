@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - João Pessoa Dança de Salão</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/api.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="site-name">
+            <img class="img-topo" src="imagens/danca1.png" alt="dança do topo">
+            <div class="site-text">
+                <h1>João Pessoa</h1>
+                <h2>Dança de Salão</h2>
+            </div>    
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">PÁGINA INICIAL</a></li>
+                <li><a href="escolas.html">ESCOLAS</a></li>
+                <li><a href="professores.html">PROFESSORES</a></li>
+                <li><a href="eventos.html">EVENTOS</a></li>
+                <li><a href="#">ARTIGOS</a>
+                    <ul class="submenu">
+                        <li><a href="artigos-historia.html">Historia</a></li>  
+                        <li><a href="artigos-estilos.html">Estilos</a></li>
+                        <li><a href="artigos-cultura.html">Cultura</a></li>
+                        <li><a href="artigos-etiqueta.html">Etiqueta</a></li>
+                        <li><a href="artigos-curiosidades.html">Curiosidades</a></li>
+                        <li><a href="artigos-celebridades.html">Celebridades</a></li>
+                    </ul>
+                </li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><a href="admin.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-form">
+        <h3>Entre em contato conosco</h3>
+        <form id="form-contato" action="javascript:void(0);">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <label for="arquivo">Anexar Arquivo</label>
+            <input type="file" id="arquivo" name="arquivo">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</div>
+
+<script>
+    $('#form-contato').submit(function() {
+        var mensagem = {
+            nome: $('#nome').val(),
+            email: $('#email').val(),
+            mensagem: $('#mensagem').val()
+        };
+
+        inserirMensagem(mensagem);
+
+        alert("Sua mensagem foi enviada com sucesso!");
+
+        $('#nome').val('');
+        $('#email').val('');
+        $('#mensagem').val('');
+    });
+</script>
+
+<footer>
+    <div class="rodape">
+        <p>© 2024 João Pessoa Dança de Salão</p>
+    </div>
+</footer>
+
+</body>
+</html>

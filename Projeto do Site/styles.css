@@ -1,0 +1,872 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: auto;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name {
+    display: flex;
+    align-items: center;
+    padding: auto;
+    margin-top: auto;
+}
+
+.img-topo {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* -------------- IMAGEM PRINCIPAL E MENU ------------ */
+
+.site-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-name h1 {
+    /* color: rgb(21, 160, 206); */
+    color: red;
+    margin: 0px;
+    font-style: italic;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.site-name h2 {
+    color: white;
+    margin: 0px;
+    font-style: italic;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+nav ul li a:hover {
+    color: red;
+    /* color: rgb(21, 160, 206); */
+    /* background-color: rgb(21, 160, 206); ---------- Eu prefiro essa.*/
+}
+
+/* -------------- ANUNCIO DA IMAGEM PRINCIPAL ------------ */
+
+.cont-principal {
+    margin-top: 0px;
+}
+
+.section-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-principal-anuncio {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.anuncio {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    top: 600px;
+    left: 750px;
+    padding: 20px;
+    width: 370px;
+    height: 150px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    text-align: left;
+}
+
+.frase-principal {
+    font-size: 26px;
+    margin: 0 0 15px 0;
+    width: 370px;
+}
+
+.frase-secundaria {
+    font-size: 18px;
+    margin: 0;
+    width: 370px;
+}
+
+.img-frase-sec {
+    display: flex;
+    margin-top: 30px;
+}
+
+.img-anuncio {
+    width: 30px;
+    height: auto;
+    margin-right: 12px;
+}
+
+.telefone-anuncio {
+    color: red;
+    /* color: #daa520; */
+}
+
+/* -------------- BLOCOS ------------ */
+
+.blocos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloco-1 {
+    width: 48%;
+    padding: 10px;
+    text-align: justify;
+}
+
+.bloco-2 {
+    width: 48%;
+    padding: 10px;
+    text-align: justify;
+}
+
+.bloco-azul {
+    background-color: red;
+    /* background-color: rgb(21, 160, 206); */
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    height: 40px;
+}
+
+.bloco-azul h3 {
+    margin: 0 5px 0 10px;
+}
+
+.img-historia {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+.img-historiadanca {
+    width: 100%;
+    padding: 5px;
+}
+
+.bloco-dourado {
+    background-color: red;
+    /* background-color: black; */
+    /* background-color: #daa520; */
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    height: 40px;
+}
+
+.bloco-dourado h3 {
+    margin: 0 5px 0 10px;
+}
+
+.img-ritmos {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+.container-ritmos {
+    display:inline-flex;    
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.img-cont-ritmos {
+    width: 48%;
+    padding: 5px;
+}
+
+/* -------------- FOOTER - RODAPE ------------ */
+
+footer {
+    max-width: 1200px;
+    margin: auto;
+    padding: auto;
+}
+
+.rodape {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+
+/* -------------- ESTILO DO CARROSSEL ------------ */
+.carousel {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+    animation: slide 30s infinite;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+/* -------------- ANIMAÇÃO DO CARROSSEL ------------ */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+
+/* -------------- SUBMENU ----------------------------*/
+/* Estilo geral do menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 12px;
+}
+
+/* Estilo para o submenu */
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+nav ul li:hover .submenu {
+    display:flow-root;
+}
+
+nav ul li .submenu li {
+    display: block;
+}
+
+nav ul li .submenu li a {
+    padding: 10px 20px;
+    font-size: 12px;
+    color: white;
+}
+
+nav ul li .submenu li a:hover {
+    background-color: red;
+}
+
+
+/* ---------------------- FORMULÁRIO DE CONTATO ---------------------- */
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="file"] {
+    border: 1px solid #ddd;
+}
+
+.contact-form textarea {
+    border: 1px solid #ddd;
+    height: 250px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #d14a32;
+}
+
+
+/* -------------- FORMULÁRIO DE LOGIN ------------ */
+.login-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-form label,
+.login-form input,
+.login-form button {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.login-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: red;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #d14a32;
+}
+
+/* -------------- MENSAGENS ------------ */
+.admin-dashboard h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.admin-dashboard p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.mensagem {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.mensagem-coluna {
+    display:flex; 
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.mensagem-coluna span {
+    margin-left: 8px;
+}
+
+.mensagem span {
+    font-weight: normal;
+    color: #555;
+}
+
+.mensagem hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* -------------- PAGINA HISTORIA ------------ */
+
+.historia-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: auto;
+}
+
+.historia-main {
+    text-align: center;
+    padding: 20px;
+}
+
+.historia-titulo {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.historia-paragrafo {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.history-block {
+    margin-bottom: 40px;
+}
+
+.history-titulo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.history-img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.history-texto {
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .historia-titulo {
+        font-size: 2rem;
+    }
+
+    .history-titulo {
+        font-size: 1.8rem;
+    }
+
+    .history-img {
+        max-width: 100%;
+    }
+
+    .historia-paragrafo, .history-texto {
+        font-size: 1rem;
+        max-width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/* -------------- PAGINA ESTILOS ------------ */
+.estilos-main {
+    max-width: 1200px;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.estilos-titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.estilos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.estilos-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.estilos-item:hover {
+    transform: translateY(-10px);
+}
+
+.estilos-imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.estilos-nome {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.estilos-origem {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.estilos-descricao {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .estilos-titulo {
+        font-size: 2rem;
+    }
+
+    .estilos-nome {
+        font-size: 1.6rem;
+    }
+
+    .estilos-origem {
+        font-size: 0.9rem;
+    }
+
+    .estilos-descricao {
+        font-size: 0.9rem;
+    }
+}
+
+/* -------------- PAGINA PROFESSORES ------------ */
+.professores-main {
+    max-width: 1200px;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.professores-titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.professores-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.professores-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.professores-item:hover {
+    transform: translateY(-10px);
+}
+
+.professores-imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.professores-nome {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.professores-estilo {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.professores-telefone {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.professores-local {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .professores-titulo {
+        font-size: 2rem;
+    }
+
+    .professores-nome {
+        font-size: 1.6rem;
+    }
+
+    .professores-estilo,
+    .professores-telefone,
+    .professores-local {
+        font-size: 0.9rem;
+    }
+}
+
+/* -------------- PAGINA ESCOLAS ------------ */
+.escolas-main {
+    max-width: 1200px;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.escolas-titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.escolas-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.escolas-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.escolas-item:hover {
+    transform: translateY(-10px);
+}
+
+.escolas-imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.escolas-nome {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.escolas-estilos,
+.escolas-telefone,
+.escolas-endereco {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .escolas-titulo {
+        font-size: 2rem;
+    }
+
+    .escolas-nome {
+        font-size: 1.6rem;
+    }
+
+    .escolas-estilos,
+    .escolas-telefone,
+    .escolas-endereco {
+        font-size: 0.9rem;
+    }
+}
+
+/* -------------- PAGINAS ETIQUETA ------------ */
+.etiqueta-main {
+    max-width: 1200px;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.etiqueta-titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.etiqueta-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.etiqueta-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.etiqueta-item:hover {
+    transform: translateY(-10px);
+}
+
+.etiqueta-imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.etiqueta-topico {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .etiqueta-titulo {
+        font-size: 2rem;
+    }
+
+    .etiqueta-topico {
+        font-size: 1.2rem;
+    }
+
+    .etiqueta-imagem {
+        margin-bottom: 10px;
+    }
+}
+
+/* -------------- PAGINAS EM CONSTRUÇÃO ------------ */
+.em-construcao-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.em-construcao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.em-construcao-imagem {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.em-construcao-texto {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
